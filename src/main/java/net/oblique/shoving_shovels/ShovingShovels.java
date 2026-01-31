@@ -32,7 +32,6 @@ public class ShovingShovels {
 
         //Register our mod's ModConfigSpec so that FML can create and load the config file for us (then add it to Neoforge's Config screen)
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-        modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
 
         modEventBus.addListener(this::onLoadComplete);
     }
